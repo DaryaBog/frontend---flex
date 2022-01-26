@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*.before,*.after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display: block;}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0; border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+/* ---------------------------------------- */
+img{
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.container{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    max-width: 100%;
+}
+.hi{
+    background: #1e5799;
+    background: -moz-linear-gradient(-45deg, #1e5799 0%, #1a1e60 40%, #48235e 100%);
+    background: -webkit-linear-gradient(-45deg, #1e5799 0%,#1a1e60 40%,#48235e 100%);
+    background: linear-gradient(135deg, #1e5799 0%,#1a1e60 40%,#48235e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#48235e',GradientType=1 );
+
+
+}
+.content{
+    max-width: 100%;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+@media (max-width:1023px) {
+    .content{
+        padding: 20px 50px;
+    }
+}
+.hi .content{
+    flex-wrap:wrap-reverse;
+}
+.hi__img{
+    max-width: 500px;
+}
+.hi__text{
+    margin: 0 50px;
+}
+.title{
+    font-size: 34px;
+    color: #fff;
+    padding: 0 0 30px;
+}
+.hi__list{
+    font-size: 24px;
+    text-shadow: 0px 0px 10px #8a8a8aa2;
+}
+.hi__list li{
+    padding: 0 0 10px 0;
+}
+.hi__list li:last-child{
+    padding: 0;
+}
+.what__title{
+    text-align: center;
+    color:#574462;
+}
+.what__text{
+    color: #532c68;
+    padding: 10px;
+    max-width: 60%;
+}
+.what__img{
+    max-width: 40%;
+    min-width: 300px;
+}
+.text p{
+    text-shadow: 0px 0px 20px #8a8a8a;
+    font-size: 20px;
+    padding: 0 0 15px;
+    letter-spacing: 0.5px;
+}
+.text p:last-child{
+    padding: 0;
+}
+.list li{
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    color: #574462;
+    padding: 0 0 15px;
+}
+.list li:last-child{
+    padding: 0;
+}
+
+.parts{
+    background: #eaf5ff;
+    background: -moz-linear-gradient(left,  #eaf5ff 0%, #f5f2ff 100%);
+    background: -webkit-linear-gradient(left,  #eaf5ff 0%,#f5f2ff 100%);
+    background: linear-gradient(to right,  #eaf5ff 0%,#f5f2ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaf5ff', endColorstr='#f5f2ff',GradientType=1 );
+}
+
+.parts__part{
+    background: #f4faff;
+    background: -moz-linear-gradient(top,  #f4faff 0%, #d1deff 50%, #e9e2ff 100%);
+    background: -webkit-linear-gradient(top,  #f4faff 0%,#d1deff 50%,#e9e2ff 100%);
+    background: linear-gradient(to bottom,  #f4faff 0%,#d1deff 50%,#e9e2ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4faff', endColorstr='#e9e2ff',GradientType=0 );
+
+    margin: 2%;
+    padding: 10px;
+    max-width:46%;;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px  #574462;
+
+    line-height: 25pt;
+    font-weight:700;
+    color: #532c68;
+}
+.parts__part img{
+    display:flex;
+    justify-content: center;
+}
+
+.parts__img{
+    min-width: 100px;
+    max-width: 250px;
+    max-height: 250px;
+}
+.parts__title{
+    color: #574462;
+}
+.frameworks-card{
+    background: #1e5799;
+    background: -moz-linear-gradient(-45deg,  #1e5799 0%, #181f82 25%, #461960 100%);
+    background: -webkit-linear-gradient(-45deg,  #1e5799 0%,#181f82 25%,#461960 100%);
+    background: linear-gradient(135deg,  #1e5799 0%,#181f82 25%,#461960 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#461960',GradientType=1 );
+    
+    max-width: 30%;
+    padding: 10px 0;
+    margin: 15px 0px;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    border-radius: 5px;
+    border: 1px solid #1a1e60;
+}
+@media (max-width: 1439px) {
+    .frameworks-card{
+        max-width: 48%;
+    }
+}
+@media (max-width:864px) {
+    .content{
+        padding: 10px 20px;
+    }
+    .hi__img{
+        max-width: 100%;
+    }
+    .hi__text{
+        max-width: 100%;
+        margin: 0 30px 0 100px auto;
+    }
+    .what__text{
+        max-width: 100%;
+    }
+    .what__img{
+        max-width: 100%;
+    }
+    .parts__part{
+        max-width: 100%;
+        margin: 15px 0;
+    }
+    .parts__img{
+        min-width: 100px;
+        max-width: 150px;
+        max-height: 150px;
+    }
+    .frameworks-card{
+        max-width: 100%;
+        margin: 15px 0;
+    }
+    .title{
+        font-size: 24px;
+        padding: 0 0 10px;
+    }
+}
+.frameworks__title{
+    padding: 30px 0 0 0;
+    text-align: center;
+    color: #574462;
+}
+.frameworks-card__title{
+    background: #f5f2ff;
+    text-align: center;
+    font-size: 25px;
+    color: #574462;
+    padding: 10px;
+}
+.frameworks-card__title h5{
+    font-weight: 600;
+}
+.frameworks-card__text{
+    flex: 1 1 auto;
+    padding: 20px;
+    color: #ad9ffc;
+}
+.frameworks-card__btn{
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color:#25242b;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 2px #1f0c2b;
+}
+.frameworks-card__btn:hover{
+    box-shadow: 0px 0px 2px 2px #c870ff;
+}
+.frameworks-card__btn:active{
+    box-shadow:none;
+    background: rgba(151, 126, 192, 0.774);
+}
+
+.footer{
+    background: #eeeeee;
+    border-top: 1px solid #8a8a8a;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: #574462;
+}
+
